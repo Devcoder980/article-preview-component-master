@@ -1,0 +1,195 @@
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+
+ @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,500;1,700&display=swap');
+
+ body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     font-family: 'Ubuntu', sans-serif;
+     background: hsl(210, 46%, 95%);
+ }
+
+ main {
+     border-radius: 19px;
+     display: flex;
+     background: white;
+ }
+
+ main>div:nth-child(1) {
+     flex: 1;
+
+     height: 21rem;
+     width: 26rem;
+     border-radius: 15px 0px 0px 15px;
+     background-image: url(./images/drawers.jpg);
+     background-size: cover;
+
+ }
+
+ main>div:nth-child(2) {
+     flex: 1.5;
+     width: 30rem;
+     padding: 31px;
+ }
+
+ .userdetail>div:nth-child(1) {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .userdetail {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .userdetail>div>img {
+     width: 53px;
+     border-radius: 37px;
+ }
+
+ .box2>div:nth-child(1) {
+     font-size: 1.7rem;
+     color: hsl(217, 19%, 35%);
+     font-weight: 700;
+ }
+
+ .box2>div:nth-child(2) {
+     font-size: 17px;
+     color: #969fa6;
+     padding: 22px 0px;
+
+ }
+
+ .box2>div {
+     padding-top: 11px;
+ }
+
+ .share {
+     padding: 9px;
+     width: 44px;
+     height: 44px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 27px;
+     background: hsl(212, 23%, 69%);
+     color: white;
+ }
+
+ .share>img {
+     width: 27px;
+ }
+
+ .dark {
+     color: hsl(217, 19%, 35%);
+     font-weight: 500;
+ }
+
+ .shareicon {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .shareicons {
+     display: flex;
+     position: relative;
+     background: hsl(217, 19%, 35%);
+     bottom: 5rem;
+     width: 14rem;
+     padding: 14px;
+     border-radius: 10px;
+     gap: 9px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     left: 9rem;
+     display: none;
+ }
+
+ .shareicons>p {
+     color: #969fa6;
+     font-size: 13px;
+
+     letter-spacing: 2px;
+ }
+
+ svg {
+     position: relative;
+     top: 37px;
+     left: -21px;
+     color: hsl(217, 19%, 35%);
+ }
+
+ @media screen and (max-width:800px) {
+     main {
+         display: inline;
+     }
+
+     main>div:nth-child(1) {
+         width: 30rem;
+         border-radius: 16px 16px 0px 0px;
+     }
+
+     .userdetail>div:nth-child(1) {
+         display: none;
+     }
+
+     .shareicons {
+         display: flex;
+         border-radius: 1px;
+         position: initial;
+         width: 24rem;
+         height: 3.5rem;
+         border-radius: 0px 0px 0px 11px;
+     }
+
+     .share {
+         border-radius: 0px;
+         height: 56px;
+         background: hsl(217, 19%, 35%);
+         color: white;
+     }
+
+     .bi {
+         display: none;
+     }
+ }
+
+ @media screen and (max-width:500px) {
+     main>div:nth-child(1) {
+         width: 29rem;
+     }
+ }
+
+ @media screen and (max-width:400px) {
+     main {
+         margin-top: 20px;
+         margin-right: -17px;
+     }
+
+     .box2>div:nth-child(1) {
+         font-size: 1.3rem;
+         padding: 4px 40px;
+     }
+
+     .box2>div:nth-child(2) {
+         font-size: 1rem;
+         padding: 4px 40px;
+         margin: 23px 0px;
+     }
+ }
+
+ @media screen and (max-width: 500px) {
+     main>div:nth-child(1) {
+         width: 30rem;
+     }
+ }

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Article preview component</title>
+
+</head>
+
+<body>
+
+  <main>
+    <div>
+    </div>
+    <div class="box2">
+      <div>
+        Shift the overall look and feel by adding these wonderful
+        touches to furniture in your home</div>
+      <div>
+        Ever been in a room and felt like something was missing? Perhaps
+        it felt slightly bare and uninviting. I’ve got some simple tips
+        to help you make any room feel complete.</div>
+      <div class="userdetail">
+        <div>
+          <img src="./images/avatar-michelle.jpg" alt="">
+          <div class="dark" style="margin: 0px 21px;">Michelle Appleton<div style="color: #969fa6;padding-top: 7px;">28
+              Jun 2020</div>
+          </div>
+        </div>
+        <div>
+        </div>
+        <div class="shareicon">
+          <div class="shareicons" id="shareicons">
+            <p>SHARE</p>
+            <div>
+              <img src="./images/icon-facebook.svg" alt="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                class="bi bi-caret-down-fill" viewBox="0 0 20 20">
+                <path
+                  d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+              </svg>
+            </div>
+            <img style="margin-right: 1rem;" src="./images//icon-twitter.svg" alt="">
+            <img src="./images/icon-pinterest.svg" alt="">
+          </div>
+          <div class="share" id="show"><img src="./images/icon-share.svg" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+<script>
+  let a = document.getElementById('show');
+  let boll = true;
+
+  a.addEventListener('click', () => {
+    if (window.innerWidth > 500) {
+      if (boll == false) {
+        document.getElementById('shareicons').style.display = 'none';
+        boll = true;
+      }
+      else {
+        document.getElementById('shareicons').style.display = 'flex';
+        boll = false;
+      }
+    }
+
+
+
+  })
+</script>
+
+</html>
